@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#173755" />
+  <title>Geometry 5 — Trigonometric Geometry</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" id="brandBtn" aria-label="Open topic map">
+        <span class="brand-kicker" id="brandKicker">GEOMETRY 5</span>
+        <span class="brand-title" id="brandTitle">Trigonometric Geometry</span>
+      </button>
+      <div class="topbar-controls">
+        <div class="segmented compact" id="languageGroup" role="group" aria-label="Language">
+          <button class="active" data-lang="en">EN</button><button data-lang="id">ID</button>
+        </div>
+        <button class="teacher-pass" id="teacherPassBtn" aria-pressed="false"><span aria-hidden="true">⌁</span><span id="teacherPassLabel">Teacher Pass</span></button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open section menu">☰</button>
+      </div>
+    </header>
+    <aside class="sidebar" id="sidebar" aria-label="Lesson sections"><div class="sidebar-inner">
+      <div class="progress-head"><div><span class="eyebrow" id="progressLabel">Progress</span><strong id="progressText">0 / 16</strong></div><div class="progress-ring" id="progressRing" aria-hidden="true"></div></div>
+      <nav id="sectionNav"></nav>
+    </div></aside>
+    <main class="main-content" id="mainContent" tabindex="-1"></main>
+    <footer class="lesson-footer">
+      <button class="nav-btn secondary" id="prevBtn">← <span id="previousLabel">Previous</span></button>
+      <button class="nav-btn ghost" id="mapBtn"><span id="mapLabel">Topic Map</span></button>
+      <button class="nav-btn primary" id="nextBtn"><span id="nextLabel">Next</span> →</button>
+    </footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="bank.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
